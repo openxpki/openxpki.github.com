@@ -49,3 +49,14 @@ body {
 .author a {
     color: #ee4444;
 }
+
+.sidebar.logo {
+    background-image: url('logo.png'); 
+    background-repeat: no-repeat;
+    background-position: 20% center;
+}
+
+.navbar-brand {
+    padding: 5px 10px;
+}
+
