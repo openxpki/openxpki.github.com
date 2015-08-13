@@ -2,30 +2,37 @@
 layout: default
 ---
 
-{% for post in paginator.posts %}
-<div class="article">
-    <div class="well">
-        <h1><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }}</a></h1>
-        {% if site.comments == true and post.comments == true and site.disqus != '' %}
-          <p class="author"><a href="{{ site.baseurl }}{{ post.url }}/#disqus_thread">Comments</a></p>
-        {% endif %}
-        <div class="content">
-            {{ post.content }}
-        </div>
-    </div>
-</div>
-{% endfor %}
+<div class="well">
+    <h1>The OpenXPKI Project</h1>
+    <p>The OpenXPKI project has the vision to publish a software stack
+    that provides all necessary components to manage keys and certificates
+    based on the x509 cryptography standard.</p>
 
-<div class="pagination">
-  {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-        <a class="btn btn-default" href="{{ site.baseurl}}/index.html" class="previous">Newer</a>
-      {% else %}
-        <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.previous_page }}" class="previous">Newer</a>
-      {% endif %}
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.next_page }}" class="next">Older</a>
-  {% endif %}
+    <h2>Project Status</h2>
+    <p>As of Summer 2015 the core and new webui are quite stable and we are
+    doing some final polishing. The plan is to release <tt>one dot zero</tt>
+    on the 10th anniversary of the project in October 2015. There are already 
+    several installations used in production and we encourage anybody to give 
+    it a try and provide feedback.</p>
+
+    <h2>Core Features</h2>
+    <ul>
+    <li>WebUI compatible with all major browsers</li>
+    <li>Ready-to-run example config included</li>
+    <li>Support for SCEP (Simple Certificate Enrollment Protocol)</li>
+    <li>Easy adjustment of workflows to personal needs</li>
+    <li>Run multiple seperate CAs with a single installation, Automated rollover of CA generations</li>
+    <li>Can use Hardware Security Modules (e.g. nShield solo) for crypto operations</li>
+    <li>Issue certificates with public trusted CAs (e.g. SwissSign, Commodo, VeriSign)</li>
+    <li>Based on openssl and perl, runs on most *nix platforms</li>
+    <li>100% Open Source, commercial support available</li> 
+    </ul>
+
+    <h2>Ressources</h2>
+    <ul>
+    <li>Development and issue tracking using <a href="https://github.com/openxpki/openxpki">github</a></li>
+    <li>Mailing lists for <a href="https://lists.sourceforge.net/lists/listinfo/openxpki-users">users</a> and <a href="https://lists.sourceforge.net/lists/listinfo/openxpki-devel">developer</a></li>
+   <li>Documentation (some) at <a href="http://openxpki.readthedocs.org/en/latest/">ReadTheDocs</a></li>
+    <li>Package repository at <a href="http://packages.openxpki.org/">http://packages.openxpki.org/</a> (debian wheezy only, yet. SLES and Ubuntu coming soon).</a></li>
+    </ul>
 </div>
