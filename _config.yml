@@ -27,7 +27,8 @@ github: 'openxpki/openxpki'
 permalink: /:categories/:year/:month/:title
 paginate: 3
 
-highlighter: pygments
+#highlighter: pygments
+highlighter: rouge
 #markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
