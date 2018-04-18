@@ -30,7 +30,7 @@ The workshop agenda is:
 
 12:45 - Use Cases Based on Actual Projects
 
-* 802.1x network authentication for Windows clients
+* Windows autoenrollment with Secardeo certEP for IEEE 802.1X network access
 * enrollment of devices using SCEP with approval via ServiceNow CMDB
 * KPI reporting based on certificate metadata using Elasticsearch/Kibana
 
