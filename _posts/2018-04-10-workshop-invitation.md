@@ -33,6 +33,7 @@ The workshop agenda is:
 * Windows autoenrollment with Secardeo certEP for IEEE 802.1X network access
 * enrollment of devices using SCEP with approval via ServiceNow CMDB
 * KPI reporting based on certificate metadata using Elasticsearch/Kibana
+* OpenXPKI as certificate self service frontend using an external CA 
 
 15:00 - Hands-On Session
 
