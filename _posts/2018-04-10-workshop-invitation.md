@@ -8,7 +8,7 @@ With the upcoming release of OpenXPKI 2.0 and the increase of activity on the ma
     Title:  OpenXPKI Workshop 2.0
     Topics: Basic OXI features, PKI tips and Use Cases
     When:   May 15th, 2018
-    Where:  Munich, Germany (please R.S.V.P. for location details)
+    Where:  Munich, Germany (near Sendlinger Tor, please R.S.V.P. for location details)
 
 
 The workshop agenda is:
@@ -42,11 +42,11 @@ The workshop agenda is:
 
 16:30 - End of Workshop
 
-* OpenXPKI 2.0 release party begins -- feel free to join!
+* OpenXPKI 2.0 release party begins -- feel free to join -- the first drink is on us.
 
 
 Capacity is limited, so please send an informal email to office@whiterabbitsecurity.com to reserve your seat.
 
-The workshop is organized and sponsored by White Rabbit Security GmbH, so there is no charge for attending. Special thanks to AMAN Media GmbH for generously providing us with the venue.
+The workshop is organized and sponsored by White Rabbit Security GmbH, so there is no charge for attending. 
 
 Looking forward to meet you!
