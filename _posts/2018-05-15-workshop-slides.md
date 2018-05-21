@@ -8,4 +8,4 @@ Thanks to all our guests for the interesting discussion - we hope everyone liked
 
 Here are the slides from the workshop:
 
-* [OpenXPKI introduction and core principles](download/201805-openxpki-workshop-part1.pdf)
+* [OpenXPKI introduction and core principles](/download/201805-openxpki-workshop-part1.pdf)
