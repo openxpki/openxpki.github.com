@@ -4,41 +4,52 @@ layout: default
 
 <div class="well">
     <h1>The OpenXPKI Project</h1>
-    <p>The OpenXPKI project has the vision to publish a software stack
-    that provides all necessary components to manage keys and certificates
-    primarily based on the X509v3 cryptography standard.</p>
-
-    <h2>OpenXPKI Workshop - Reserve your seat now!</h2>
-    <p>We are happy to announce our next OpenXPKI workshop happening on May 15th
-    in Munich, accompanied with the release party of OpenXPKI 2.0!
-    The workshop is free of charge but as we have limited capacity please reserve your seat soon!
-    <a href="/2018/04/workshop-invitation">See this blog post for detailed information.</a></p>
+    <p>OpenXPKI is an enterprise-grade PKI/Trustcenter software. It
+    implements the necessary <a href="{{ site.baseurl}}/features.html">features</a>
+    to operate a PKI in professional environments. While primarily designed to run as an online RA/CA
+    for managing X509v3 certificates, its flexibility allow for a wide
+    range of possible use cases with regard to cryptographic key
+    management.</p>
+  
+    <p>OpenXPKI has a stable, mature code base and a growing
+    user base. The developer team actively supports several professional installations
+    some of which have been running continuously since 2009 and host several logical CAs
+    with hundreds of thousands of active certificates.</p>
 
     <h2>Project Status</h2>
-    <p>Celebrating the 10th anniversary of the project, version 1.0 of our trustcenter software 
-    was officially released on October 20th, 2015.</p>
-    <p>Version 2.0 is available as of May 2018</p>
+    <p>Version 2.0 is available as of May 2018.</p>
     <p>Packages for Debian Jessie are available on the
     package mirror, see the <a href="http://openxpki.readthedocs.org/en/latest/quickstart.html">
     quickstart</a> for installation details. The product is actively maintained,
-    new packages are published several times a year and announced via the mailing lists.</p>
+    new packages are published several times a year and announced via
+    the mailing lists.</p>
+    <p>Enterprise support and professional services are available from
+    <a href="https://whiterabbitsecurity.com">White Rabbit Security GmbH, Germany</a>.
 
-    <p>For a quick overview on the project, we recommend to check the
-    <a href="/2015/10/workshop-slides">slides from the release workshop</a>
-    or use <a href="http://demo.openxpki.org">our demo installation.</a></p>
+    <p>For an overview on OpenXPKI, we recommend to check the
+    <a href="{{ site.baseurl }}/features.html">features overview
+    page.</a> More detailed information can be found in the slides
+    from the <a href="/2018/05/workshop-slides">2018 OpenXPKI Workshop held in Munich</a> and from the 
+    <a href="/2015/10/workshop-slides">2015 Workshop in Frankfurt</a></p>
+    Also check out our <a href="http://demo.openxpki.org">demo installation.</a></p>
 
     <h2>Core Features</h2>
     <ul>
     <li>WebUI compatible with all major browsers</li>
     <li>Ready-to-run example config included</li>
-    <li>Support for SCEP (Simple Certificate Enrollment Protocol)</li>
-    <li>Easy adjustment of workflows to personal needs</li>
+    <li>Support for SCEP (Simple Certificate Enrollment Protocol) and 
+    EST (Enrollment over Secure Transport)</li>
+    <li>Native Microsoft Windows auto-enrollment supported via 3rd
+    party software</li>
+    <li>Easy adjustment of workflows to custom needs</li>
     <li>Run multiple separate CAs with a single installation, automated rollover of CA generations</li>
     <li>Can use Hardware Security Modules (e. g. Thales HSMs) for crypto operations</li>
     <li>Issue certificates with public trusted CAs (e. g. SwissSign, Comodo, VeriSign)</li>
     <li>Based on OpenSSL and Perl, runs on most *nix platforms</li>
-    <li>100% Open Source, commercial support available</li>
-    <li>check out the <a href="/roadmap.html">roadmap</a> for planned features</li>
+    <li>Feature complete OpenSource community edition</li>
+    <li><a href="{{ site.baseurl }}/support.html">Commercial support</a> and  <a href="{{ site.baseurl }}/training.html">training</a>,  <a href="https://whiterabbitsecurity.com">professional services and
+    advanced enterprise features</a> are available</li>
+    <li>check out the <a href="{{ site.baseurl }}/roadmap.html">roadmap</a> for planned features</li>
     </ul>
 
     <h2>Resources</h2>
@@ -47,11 +58,8 @@ layout: default
     <li>Mailing lists for <a href="https://lists.sourceforge.net/lists/listinfo/openxpki-users">users</a> and <a href="https://lists.sourceforge.net/lists/listinfo/openxpki-devel">developer</a></li>
     <li>Documentation (some) at <a href="http://openxpki.readthedocs.org/en/latest/">ReadTheDocs</a></li>
     <li>Package repository at <a href="http://packages.openxpki.org/">http://packages.openxpki.org/</a> (Debian Jessie, Ubuntu Trusty).</a></li>
+    <li>Community support is availble via the <a href="https://lists.sourceforge.net/lists/listinfo/openxpki-users">OpenXPKI users mailinglist</a></li>
     </ul>
-
-    <h2>Support</h2>
-    <p>Community support is availble via the <a href="https://lists.sourceforge.net/lists/listinfo/openxpki-users">OpenXPKI users mailinglist</a>,
-    <a href="{{ site.baseurl }}/support.html">commercial support</a> is also available.</p>
 
 </div>
 

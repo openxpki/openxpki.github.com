@@ -148,7 +148,7 @@ of the Connector is taken as the value of the corresponding
 OpenXPKI configuration value at runtime.</p>
 
 <p>Connectors exist for querying flat files, LDAP directories, SQL
-databases, RESTful services and more.</p>
+databases, Web services and more.</p>
 
 <p>The OpenXPKI system makes extensive use of the Connector concept by providing
 seamingly useless static default values in the
@@ -235,22 +235,22 @@ protection provided by the OpenXPKI core.</p>
 
 <h2>Reporting</h2>
 <p>OpenXPKI includes reporting functions (implemented as one-shot
-workflow) which collect statics data for a PKI Realm and creates
+workflows) which collect statics data for a PKI Realm and creates
 downloadable CSV files with the statistical data.</p>
 
 <h1>Technical details</h1>
 <ul>
-  <li><b>Operating system and code base:</b> OpenXPKI runs on Unix-like operating systems (Linux, FreeBSD and
-  possibly others). Most of the code base is implemented in Perl5. In contrast to some other programming languages
+  <li><b>Operating system:</b> OpenXPKI runs on Unix-like operating systems (Linux, FreeBSD and
+  possibly others). <a href="http://packages.openxpki.org/">Packages
+  for Debian and Ubuntu are available.</a></li>
+  <li><b>Code base:</b>  Most of the code base is implemented in Perl5. In contrast to some other programming languages
   Perl provides a very stable programming API. PKIs are designed to
   operate for many years, and OpenXPKI benefits greatly from Perl's
   mature runtime environment and stability.</li>
   <li><b>Supported databases:</b> MySQL, MariaDB, Oracle; (PostgreSQL 
   support possible but currently outdated due to lack of customer demand)</li>
-  <li><b>User interface:</b> Generic browser based. User interface 
-  representation reflects workflow instance state.</li>
-  <li><b>CRL publication:</b> An arbitrary number of CRL publication
-  targets can be defined, e. g. allowing to write the CRL to the file
-  system to an LDAP directory</li>
+  <li><b>User interface:</b> Generic browser based UI. User interface 
+  representation reflects workflow instance state. All major browsers
+  are supported.</li>
 </ul>  
 </div>
