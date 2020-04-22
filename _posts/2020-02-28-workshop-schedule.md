@@ -7,10 +7,10 @@ we are happy to invite you to our first OpenXPKI User Group Meeting on May 5th/6
 
     Title:  User Group Meeting / Technical Workshop 
     Topics: Basic OpenXPKI features, PKI tips and Use Cases
-    When:   May 5th / May 6th 2020
+    When:   Postponed due to Covid19 - stay at home and stay healthy!
     Where:  Frankfurt/Main, Germany (near subway station Westend, R.S.V.P. for location details)
     
-## Tuesday, May 5th - User Group Meeting
+## Day One - User Group Meeting
 
 The User Group Meeting (May 5th) is hosted by White Rabbit Security and attendance is free of charge. As seats are limited an informal registration is required by email to <openxpki@whiterabbitsecurity.com>. We would appreciate if you add a line or two on your experience and expectations. 
 
@@ -47,7 +47,7 @@ The User Group Meeting (May 5th) is hosted by White Rabbit Security and attendan
 
 * informal get together - details t.b.a.
 
-## Wednesday, May 6th - Technical Workshop
+## Day Two - Technical Workshop
 
 For those being interested in a "hands on" experience, we offer a technical workshop on May 6th. We will charge an attendance fee of 450 Euros (excl. VAT) per seat, food and drinks are included. Registration is required by April 17th EOB at the latest. Users presenting their project on May 5th will get a free seat for the workshop!
 
