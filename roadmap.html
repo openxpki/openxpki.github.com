@@ -6,31 +6,36 @@ layout: default
     <h1>Roadmap / Releases</h1>
 
     <h2>Release Cycle</h2>
-    <p>We do not have an official release cycle but we plan to publish
-    new releases whenever we add new functionality or in case we find any
-    severe bugs.</p>
+    <p>We do not have an official release cycle but in the past we 
+        managed to have one new minor release per quarter and we 
+        are expecting to keep this. Important security fixes or severe
+        bugs will be published outside this timeline.</p>
 
     <h2>Versioning</h2>
     <p>We follow the <a href="http://semver.org">semantic versioning
-    guidelines</a>, so you are able to update within the 1.x branch at any
+    guidelines</a>, so you are able to update within the 3.x branch at any
     time without touching your config.</p>
 
     <h2>Packaging / OS Support</h2>
-    <p>Community packages are provided for free for Debian and available from our the package server. We are currently working on the upgrade to Debian Buster and a docker container.<br>
+    <p>Community packages are provided for free for Debian Buster and available 
+        from our the package server. There is also a docker container available,
+        see the Ressources section on the main page and the <a href="https://openxpki.readthedocs.io/en/latest/quickstart.html">quickstart manual</a> 
+        for details.<br>
     Native packages for other distributions are available via Enterprise-Support from <a href="https://whiterabbitsecurity.com/">White Rabbit Security.</a></p>
 
     <h2>Features / Roadmap</h2>
     <h3>Version 3.x</h3>
-    <p>This is currently <b>in development</b> and likely to be released in Q4/19</p>
+    <p>This is the current stable and recommended release.</p>
     <ul>
     <li>Upgrade to OpenSSL 1.1</li>
-    <li>Upgrade Community Packages to Debian Buster<Li>
+    <li>Community Packages for Debian Buster<Li>
     <li>Finalise migration to LibSCEP (remove old SCEP tools)</li>
     <li>Full support for EST</li>
+    <li>New WebUI </li>
     </ul>
     
     <h3>Version 2.x</h3>
-    <p>This is the current stable and recommended release.</p>
+    <p><b>Development has been discontinued, security fixes are still available via subscription.</b></p>
     <ul>
     <li>Enhanced Reporting and Statistics</li>
     <li>Enhanced command line tools (ACLs, parseable output)</li>
@@ -40,7 +45,7 @@ layout: default
     </ul>
     
     <h3>Version 1.x</h3>
-    <p><b>Development of the 1.x has been discontinued</b></p>
+    <p><b>Development has been discontinued</b></p>
     <ul>
     <li>RPC API for request/renewal of certificates</li>
     <li>Enrollment over Secure Transport (RFC 7030)</li>
