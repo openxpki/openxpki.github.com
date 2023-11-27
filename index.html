@@ -286,7 +286,7 @@
           <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bi-check-circle"/></svg>
           <div>
             <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Easy Deployment</h3>
-            <p>Deployment is as easy as installing the software using your distribution's package manager, copying and adjusting the sample configuration, loading your key material and you're reaady to go!
+            <p>Deployment is as easy as installing the software using your distribution's package manager, copying and adjusting the sample configuration, loading your key material and you're ready to go!
           </div>
         </div>
 
@@ -309,45 +309,331 @@
       </div>
     </div>
 
+
+    <div class="container mt-5">
+      <h2 class="text-center">OpenXPKI Product Comparison</h2>
+  <p class="lead text-center">Explore the differences between the
+  OpenXPKI Community Edition and OpenXPKI Enterprise Edition.</p>
+
+  <div class="table-responsive mt-4">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Community Edition</th>
+          <th>Enterprise Edition</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Feature 1</td>
+          <td><i class="bi bi-check text-success"></i> Available</td>
+          <td><i class="bi bi-check text-success"></i> Available</td>
+        </tr>
+        <tr>
+          <td>Feature 2</td>
+          <td><i class="bi bi-x text-danger"></i> Not Available</td>
+          <td><i class="bi bi-check text-success"></i> Available</td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  </div>
+  </div>
+  
     <!-- START THE FEATURETTES -->
 
     <hr class="featurette-divider">
 
+
+	 <!-- TBD -->
     <div class="row featurette">
       <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+    <h2 class="featurette-heading fw-normal lh-1">OpenXPKI Mission: <span class="text-body-secondary">Empowering Continuous PKI Operation.</span></h2>
+    <p class="lead">OpenXPK is an enterprise grade PKI and Trustcenter
+      software which focuses strongly on Registration Authority (RA)
+	functionality and supporting truly continuous PKI operation in
+	professional PKI environments of any scale and complexity.
+	Maintained by a seasoned team of PKI
+	experts, it offers unmatched flexibility and
+    configurability. Rooted in a
+	vision outlined in the original architecture whitepaper,
+	the project constantly evolves to meet modern PKI needs. Unique approaches
+	tackle common challenges faced in professional environments,
+	emphasizing technical abstraction over local customizations. While <a href="https://github.com/openxpki/openxpki" target="_blank" rel="noopener noreferrer">OpenXPKI Community Edition</a> is true
+    OpenSource, the <a href="https://www.whiterabbitsecurity.com/produkte/openxpki/"
+    target="_blank" rel="noopener noreferrer">Enterprice Edition</a> provides additional features, commercial support
+    and consulting services offered by <a href="https://www.whiterabbitsecurity.com"
+    target="_blank" rel="noopener noreferrer">White Rabbit Security GmbH</a>.</p>
+	
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+	  <img src="img/status.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="OpenXPKI Status Screen">
       </div>
     </div>
 
     <hr class="featurette-divider">
 
+	 <!-- Lattice -->
     <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-      </div>
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading fw-normal lh-1">Enterprise Ready: <span class="text-body-secondary">Mature, Standard Compliant, and
+      Future-Proof.</span></h2>
+      <p class="lead">OpenXPKI is built upon a highly stable and mature code base, continuously maintained and upgraded by the OpenXPKI development team at White Rabbit Security GmbH. The project prioritizes adherence to open standards for seamless integration with other infrastructure components.</p>
+      <p class="lead">The OpenXPKI team is committed to making
+    OpenXPKI the optimal choice for a future-proof PKI. The project
+    remains aligned with current trends in PKI and Cryptography,
+    following up on the latest developments in the ongoing standardization of Post Quantum Cryptography. OpenXPKI is poised to provide robust support for Post Quantum Cryptography algorithms and protocols, ensuring its relevance and security for the next decades of cryptographic advancements.</p>
+    </div>
+         <div class="col-md-5 order-md-1">
+  <img src="img/SVP.svg.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"    width="500" height="500" alt="Lattice-Based Cryptography">
+	 </div>
+	 </div>
+	 
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7">
+    <h2 class="featurette-heading fw-normal lh-1">Certificate
+  Lifecycle Management: <span class="text-body-secondary">Getting Back
+  into Power.</span></h2>
+    <p class="lead">OpenXPKI provides robust features for managing the lifecycle of certificates, equipping PKI Registration Officers with a comprehensive toolkit for their tasks. The capabilities span from powerful GUI functions for information retrieval and metadata management to overseeing certificate request processes.</p>
+    <p class="lead">This extends to automation and policy enforcement features for enrollment interfaces (SCEP, EST, ACME and OpenXPKIRPC). Custom metadata, alongside standard information like contact email addresses, can be defined and managed through the GUI, providing flexibility in grouping or querying certificates. Fully automatic end entity certificate renewal is supported across all enrollment interfaces, contingent on end entity side support.</p>
+    <p class="lead">For distributed certificate management, White
+    Rabbit Security offers CertNanny Enterprise Edition, a commercial multi-platform client-side agent that integrates seamlessly with OpenXPKI.</p>
+  </div>
+<div class="col-md-5">
+  <img src="img/gustavo-sanchez-RwliW6b74Hw-unsplash-500.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image  img-fluid mx-auto" width="500" height="500" alt="Control Lever">
+</div>
+</div>
+
+
+    <hr class="featurette-divider">
+	 <!-- Hochhaus -->
+    <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading fw-normal lh-1">PKI Realms: <span class="text-body-secondary">Run Multiple Logical CAs in One OpenXPKI Instance.</span></h2>
+      <p class="lead">OpenXPKI supports hosting multiple PKI Realms in
+    a single instance. Each PKI Realm manages a distinct namespace of
+    end-entity certificates and may include zero, one, or many Issuing
+    CAs for certificate issuance within that namespace. A PKI Realm
+    defines profiles, workflows and policies for certificate management,
+    ensuring complete separation from other PKI Realms. </p>
+    </div>
+
+<div class="col-md-5 order-md-1">
+  <img src="img/simone-hutsch-eXBqaHUt994-unsplash-500.jpg"
+  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Skyscraper">
+</div>
+    </div>
+
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+  <div class="col-md-7">
+    <h2 class="featurette-heading fw-normal lh-1">Seamless Issuing CA
+    Rollover: <span class="text-body-secondary">Effortless Certificate Authority Rotation.</span></h2>
+    <p class="lead">CA Rollovers should be easy. In fact, why even
+  restart your PKI for that? In a PKI Realm, multiple Issuing CAs can be configured to issue certificates. OpenXPKI's core automatically selects the appropriate Issuing CA certificate for issuance based on criteria such as the highest NotBefore date. Older Issuing CA certificates are retained in passive mode and used for issuing CRLs post-rollover. This ensures seamless CA rollovers without system downtime or administrative intervention. While the mechanism defaults to automatic rollovers, administrators can also set specific dates or execute rollovers manually. As an Issuing CA's certificate nears expiration, the system automatically issues a final long-lived CRL for a smooth retirement process.</p>
+  </div>
+      <div class="col-md-5">
+	<img src="img/parrish-freeman-lzNnMcqRITM-unsplash-500.jpg"
+  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="CA Rollover">      </div>
+</div>
+
+    <hr class="featurette-divider">
+
+
+    <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading fw-normal lh-1">Workflow Engine:
+    <span class="text-body-secondary">Efficiently Model and Execute
+    Key Management Processes.</span></h2>
+      <p class="lead">OpenXPKI's core system offers a toolbox of simple, stateless cryptographic functions. Complex or stateful operations are modeled as workflows, ranging from one-shot reporting tasks to long-lived processes requiring manual interactions. Workflow instances can be interrupted and reinstantiated. The system includes common workflows for tasks like manual certificate requests, revocation requests, automatic enrollment, CRL issuance, and reporting. These can be modified or extended to meet specific project needs, or entirely new workflows can be modeled for non-standard requirements.</p>
+    </div>
       <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+  <img src="img/bradyn-trollip-pxVOztBa6mY-unsplash-500.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Dominos">
       </div>
     </div>
 
-    <hr class="featurette-divider">
+<hr class="featurette-divider">
 
+	 <!-- Screen shot -->
     <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-      </div>
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1">Generic Web Frontend: <span class="text-body-secondary">Intuitive Interface for Workflow Management.</span></h2>
+      <p class="lead">OpenXPKI boasts a robust and versatile Web
+    frontend which empowers users and administrators to interact
+    seamlessly with the system. Access the Workflow catalog,
+    instantiate new workflows, and manage existing instances. The
+    frontend dynamically renders the workflow's current state based on
+    its workflow definition and internal status. Defining a workflow in OpenXPKI's configuration automatically provides a suitable Web-based frontend.</p>
+    </div>
+
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+  <img src="img/reviewcsr2.png" class="bd-placeholder-img  bd-placeholder-img-lg featurette-image img-fluid mx-auto"  width="500" height="500" alt="Web Frontend">
       </div>
     </div>
 
     <hr class="featurette-divider">
+<div class="row featurette">
+  <div class="col-md-7 order-md-2">
+    <h2 class="featurette-heading fw-normal lh-1">Infrastructure Key Protection: <span class="text-body-secondary">Enhanced Security with Hardware Security Modules.</span></h2>
+    <p class="lead">OpenXPKI supports Hardware Security Modules (HSMs) for robust infrastructure key protection through the PKCS#11 interface. Leveraging HSMs enhances the overall security posture of the system by providing a dedicated hardware-based solution for cryptographic key management.</p>
+  </div>
+         <div class="col-md-5 order-md-1">
+	<img src="img/NCipher_nShield_F3_Hardware_Security_Module.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Hardware Security Module">
+      </div>
+
+</div>
+   <hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7">
+    <h2 class="featurette-heading fw-normal lh-1">Reporting: <span class="text-body-secondary">Efficiently Collect and Provide Statistical Data.</span></h2>
+    <p class="lead">OpenXPKI features customizable reporting functions, implemented
+  as one-shot workflows. These functions collect statistical data and
+  provide meaningful Key Performance Indicators for
+  the managed PKI Realms and generate downloadable CSV files containing the
+  gathered information. This capability streamlines the process of
+  obtaining and analyzing key statistical insights from the PKI
+    environment.
+    </p>
+  </div>
+      <div class="col-md-5">
+	<img src="img/certstats.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Statistics">
+      </div>
+</div>
+
+    <hr class="featurette-divider">
+
+
+<div class="row featurette">
+  <div class="col-md-7 order-md-2">
+    <h2 class="featurette-heading fw-normal lh-1">Flexible Configuration: <span class="text-body-secondary">Manage System State Auditably and Verifiably.</span></h2>
+    <h3 class="featurette-heading-sub">Strictly file-based Configuration</h3>
+    <p class="lead">OpenXPKI's entire system is configured through a hierarchy of YAML-format configuration files. The use of a revision control system like Git facilitates easy management, enabling an auditable and verifiable representation of the system state. This approach ensures transparency and flexibility in configuring the OpenXPKI system.</p>
+  </div>
+<div class="col-md-5 order-md-1">
+  <img src="img/wfcondition1.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="File-based configuration">
+</div>
+
+</div>
+
+    <hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7">
+    <h2 class="featurette-heading fw-normal lh-1">Automation: <span class="text-body-secondary">Highly Configurable
+  Certificate Enrollment Interfaces.</span></h2>
+    <p class="lead">OpenXPKI's enrollment interfaces are highly flexible and configurable. They support automatic renewal based on the previous certificate's existing key and seamlessly integrate external authentication and authorization sources via the Connector interface.</p>
+    <p class="lead">Following OpenXPKI's "zero, one, or many"
+  paradigm, you can define an arbitrary number of enrollment
+  interfaces of any type within a PKI Realm. This allows the support
+  of individual enrollment modes for different client groups. Standard
+  enrollment interfaces, such as SCEP, EST, and ACME, are fully
+  supported, providing a comprehensive solution for various enrollment
+    scenarios.</p>
+    <p class="lead">In conjunction with client-side tools such as
+  CertNanny Enterprise Edition, organizations can automate request
+  and renewal of certificates.</p>
+  </div>
+      <div class="col-md-5">
+  <img src="img/enroll.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Enrollment Interface">
+      </div>
+</div>
+
+    <hr class="featurette-divider">
+<div class="row featurette">
+  <div class="col-md-7 order-md-2">
+    <h2 class="featurette-heading fw-normal lh-1">Connectors: <span
+  class="text-body-secondary">Accessing External Data Resources.</span></h2>
+    <p class="lead">OpenXPKI introduces the powerful concept of a <a
+  href="http://search.cpan.org/~mrscotty/Connector/lib/Connector.pm"
+  target="_blank" rel="noopener noreferrer">Connector</a>,
+  implementing an abstract key/value tuple interface. Configurable
+  anywhere in the OpenXPKI configuration tree, a Connector specifies its implementation class
+  and potential static parameters. The system, based on the provided
+  key, resolves the implementation class, executes the query at runtime, and returns the result.</p>
+    <p class="lead">Connectors can replace literal configuration
+  values throughout the entire OpenXPKI configuration, allowing for
+  unmatched flexibility when accessing external resources. Connectors are available for various data sources such as flat files, LDAP directories, SQL databases, and web services. OpenXPKI leverages Connectors extensively, allowing attachment of external data sources for authentication, authorization, or publishing CRLs and certificates. This flexibility enables customization and seamless integration with surrounding infrastructure at a level unmatched by many competitors.</p>
+  </div>
+        <div class="col-md-5 order-md-1">
+	<img src="img/connector.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="Connectors">
+      </div>
+</div>
+
+
+    <hr class="featurette-divider">
+
+    
+
+
+<div class="row featurette">
+  <div class="col-md-7">
+    <h2 class="featurette-heading fw-normal lh-1">Credential protection: <span class="text-body-secondary">Avoiding Sensitive Data in Configuration Files.</span></h2>
+    <p class="lead">OpenXPKI allows exclusion of sensitive
+  information, like database passwords, from (usually version-controlled) configuration files. This is achieved by leveraging the companion tool <a href="https://github.com/certnanny/KeyNanny" target="_blank" rel="noopener noreferrer">KeyNanny</a>. The native integration of KeyNanny, facilitated through a KeyNanny Connector, ensures secure handling of sensitive data, enhancing the overall security posture of the OpenXPKI configuration.</p>
+  </div>
+      <div class="col-md-5">
+	<img src="img/secret.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="KeyNanny Integration">
+      </div>
+</div>
+
+<hr class="featurette-divider">
+
+
+
+<div class="row featurette">
+  <div class="col-md-7 order-md-2">
+    <h2 class="featurette-heading fw-normal lh-1">Expose Any Workflow: <span class="text-body-secondary">Generic RPC Interface.</span></h2>
+    <p class="lead">The RPC interface in OpenXPKI enables the exposure
+  of any Workflow via an RPC endpoint. Within each PKI Realm, you can
+  define an arbitrary number of RPC API endpoints accessible through
+  HTTP/HTTPS GET/POST requests, depending on the web server
+  configuration. Each RPC interface can be linked to a distinct
+  workflow for efficient RPC call processing. This allows controlled
+  exposure of business logic implemented the Workflow Engine of
+  OpenXPKI to consumers while leveraging the powerful key management features
+  provided by the OpenXPKI core.</p>
+  </div>
+  <div class="col-md-5 order-md-1">
+    	<img src="img/rpc.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="RPC Interface">
+      </div>
+</div>
+
+
+    <hr class="featurette-divider">
+
+
+<div class="row featurette">
+  <div class="col-md-7">
+    <h2 class="featurette-heading fw-normal lh-1">Command Line Driven
+  Operating: <span class="text-body-secondary">Auditable, Reproducible
+  Runtime Administration.</span></h2>
+    <p class="lead">OpenXPKI's operational tasks are executed via the
+  command line using a set of provided command line tools. Administrators can perform tasks in a textual form, enabling the exact description of administrative actions in change task descriptions or scripts.</p>
+    <p class="lead">For instance, the import of a new Issuing CA
+  certificate can be seamlessly conducted online without interrupting
+  the OpenXPKI system. When configured properly, the system can
+  automatically determine the correct private key for a specific CA
+  certificate, even referencing the correct HSM-protected key when
+  applicable. This capability facilitates performing Issuing CA rollovers without
+  downtime and without altering the configuration, allowing the description or scripting of PKI operational tasks for ITIL-compliant change processes.</p>
+  </div>
+      <div class="col-md-5">
+	<img src="img/openxpkiadm.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="CLI Tools">
+      </div>
+</div>
+
+ 
+
+
+
+
+
 
     <!-- /END THE FEATURETTES -->
 
@@ -357,7 +643,7 @@
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2017–2023 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <p>&copy; 2023 White Rabbit Security GmbH. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
   </footer>
 </main>
 <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
