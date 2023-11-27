@@ -87,6 +87,35 @@
       .bd-mode-toggle .dropdown-menu .active .bi {
         display: block !important;
       }
+      div.carousel-item:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: 400px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: .4;
+      }
+      div.carousel-item.slide1:before {
+        background-image: url(img/screen_userhome.png);
+      }
+
+      .navbar-nav li.nav-divider {
+        position: relative;
+        margin:0 10px;
+      }
+      li.nav-divider:after{
+        content: '';
+        position: absolute;
+        right: -2px;
+        width:2px;
+        height: 80%;
+        top: 10%;
+        background: green
+      }
     </style>
 
 
@@ -114,10 +143,29 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#features">Core Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="#resources">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#packages">Packages</a>
+          </li>
+          <li class="nav-divider"></li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/openxpki/openxpki/" target="_blank">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://openxpki.readthedocs.org/en/latest/" target="_blank">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://sourceforge.net/p/openxpki/mailman/openxpki-users/" target="_blank">Mailinglist</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://demo.openxpki.org/" target="_blank">Online Demo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.whiterabbitsecurity.com/" target="_blank">Commercial Support</a>
           </li>
         </ul>
       </div>
@@ -127,52 +175,26 @@
 
 <main>
 
-  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/screen_home.png" class="d-block w-100">
-        <div class="container">
-          <div class="carousel-caption text-start text-dark">
-            <h1>Example headline.</h1>
-            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-          </div>
-        </div>
+
+  <div class="container intro">
+
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="img/openxpki.svg" class="d-block mx-lg-auto img-fluid" alt="OpenXPKI Logo" width="700" height="500" loading="lazy">
       </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-          </div>
-        </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">PKI made in Germany</h1>
+        <p class="lead">
+            OpenXPKI is an enterprise-grade PKI/Trustcenter software to manage x509v3 certificates via a modern WebUI.
+        </p>
+        <p>Established in 2009, it has grown and improved over the years, with installations serving
+            several hundreds of thousend certificates below dozends of issuing CAs on a single installation.</p>
+        <p>While running the core functionality as an OpenSource project, the team behind offers consultancy,
+            setup and operational support as well as several add-on modules for integrating certificate management
+            into existing ITSM infrastructures.
+        </p>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
 
 
@@ -187,7 +209,7 @@
       <div class="col-lg-4">
         <img class="rounded-circle" width="200" height="160" src="img/my-certificates.png">
         <h2 class="fw-normal">Certificate Lifecycle</h2>
-        <p>Request, renew and revoke certificates using customizable workflows that guide your users easily. [alt.: ... that simplify the user experience.]</p>
+        <p>Request, renew and revoke certificates using customizable workflows that guide your users easily.</p>
         <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
       </div>
       <div class="col-lg-4">
@@ -205,10 +227,8 @@
     </div><!-- /.row -->
 
 
-
-
     <div class="container px-4 py-5" id="icon-grid">
-      <h2 class="pb-2 border-bottom">OpenXPKI Core Features</h2>
+      <h2 class="pb-2 border-bottom" id="features">OpenXPKI Core Features</h2>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
         <div class="col d-flex align-items-start">
           <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bi-check-circle"/></svg>
@@ -635,7 +655,134 @@
 
 
 
-    <!-- /END THE FEATURETTES -->
+    <!-- Resources  -->
+    <div class="row">
+      <h2 id="resources"></h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4 py-5">
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+          </div>
+          <div>
+            <h2>Documentation</h2>
+            <p>Documentation is available on the <a href="https://openxpki.readthedocs.io/en/latest/">readthedocs platform</a>.
+            For first steps see the <a href="https://openxpki.readthedocs.io/en/latest/quickstart.html">quickstart manual</a>.
+            You should also check the comments in the configuration and the man pages of the application for more details.</p>
+          </div>
+        </div>
+
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+          </div>
+          <div>
+            <h2>Packages</h2>
+            <p>The community edition is available as <a href="https://packages.openxpki.org/v3/bookworm">package repository for Debian 12 Bookworm</a>.
+              Packages for RHEL/SLES/Ubutu are available via a commercial subscription.</p>
+          </div>
+        </div>
+
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+          </div>
+          <div>
+            <h2>Sources</h2>
+            <p>The <a href="https://github.com/openxpki/openxpki">complete source code is hosted on github.com</a>.
+              You will also find a <a href="https://github.com/openxpki/openxpki-config">fully working example configuration</a> there.
+            </p>
+          </div>
+        </div>
+
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+          </div>
+          <div>
+            <h2>Support</h2>
+            <p>For general support questions please use the <a href="https://lists.sourceforge.net/lists/listinfo/openxpki-users">
+              OpenXPKI user mailing list</a> hosted by sourceforge.net. Please <b>do not create items</b> on the github issue tracker for support questions.</p>
+          </div>
+        </div>
+
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+          </div>
+          <div>
+            <h2>Testdrive</h2>
+            <p>To get a first impression of OpenXPKI you can visit the <a href="https://demo.openxpki.org">public demo</a>
+              or run the <a href="https://github.com/openxpki/openxpki-docker">example configuration using docker</a>.
+          </div>
+        </div>
+
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+          </div>
+          <div>
+            <h2>Professional Services</h2>
+            <p>Reach out to the core developers at <a href="mailto:openxpki@whiterabbitsecurity.com" style="color:#464646">White Rabbit Security GmbH</a>
+              for trainings, consultancy and any other commercial support options.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- Packages Section -->
+    <div class="row">
+      <h2 class="pb-2 border-bottom" id="packages">Support and Service Packages</h2>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Community</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-styled mt-3 mb-4">
+              <li>Debian Packages</li>
+              <li>Example Configuration</li>
+              <li>Online Documentation</li>
+              <li>Support via Mailinglist</li>
+              <li>100% Free</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Enterprise</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-styled mt-3 mb-4">
+              <li>RHEL/SLES/Ubuntu Packages</li>
+              <li>Custom-Built Configuration</li>
+              <li>Extensive Handbook</li>
+              <li>Personal Support</li>
+              <li>SLAs available</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">PKI as a Service</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-styled mt-3 mb-4">
+              <li>Full Operations</li>
+              <li>Cloud or OnPremise</li>
+              <li>Flexible Licensing</li>
+              <li>Personal Support</li>
+              <li>SLAs available</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div><!-- /.container -->
 
@@ -643,10 +790,8 @@
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2023 White Rabbit Security GmbH. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <p>&copy; 2023 White Rabbit Security GmbH &middot; <a href="https://www.whiterabbitsecurity.com/impressum/">Contact and Imprint</a></p>
   </footer>
 </main>
-<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-
-    </body>
+</body>
 </html>
