@@ -131,8 +131,10 @@
         <div class="col-lg-6">
           <h1 class="display-5 fw-bold lh-1 mb-3">PKI made in Germany</h1>
           <p class="lead">
-	  OpenXPKI is an enterprise-grade PKI/Trustcenter software
-	  for managing X.509v3 certificates via a modern web user interface.
+      OpenXPKI is an enterprise-grade PKI/Trustcenter software
+	  for customizable and scaleable management of X.509v3 certificates, known
+      for its flexibility, web-based management interface, workflow support,
+      and active open source community.
           </p>
           <p>Established in 2009, it has grown and improved over the years, with installations serving
             several hundreds of thousands of certificates below dozens of issuing CAs on a single installation.</p>
@@ -559,7 +561,7 @@
               Certificate Enrollment Interfaces.</span></h2>
           <p class="lead">OpenXPKI's enrollment interfaces are highly flexible and configurable. They support automatic
             renewal based on the previous certificate's existing key and seamlessly integrate external authentication
-            and authorization sources via the Connector interface.</p>
+            and authorization sources via the <a href="#connector">Connector</a> interface.</p>
           <p class="lead">Following OpenXPKI's "zero, one, or many"
             paradigm, you can define an arbitrary number of enrollment
             interfaces of any type within a PKI Realm. This allows the support
@@ -580,7 +582,7 @@
       <hr class="featurette-divider">
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading fw-normal lh-1">Connectors: <span class="text-body-secondary">Accessing External
+          <h2 id="connector" class="featurette-heading fw-normal lh-1">Connectors: <span class="text-body-secondary">Accessing External
               Data Resources.</span></h2>
           <p class="lead">OpenXPKI introduces the powerful concept of a <a
               href="http://search.cpan.org/~mrscotty/Connector/lib/Connector.pm" target="_blank"
