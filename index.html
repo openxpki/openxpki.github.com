@@ -164,7 +164,7 @@
 
 
       <div class="container px-4 py-5" id="icon-grid">
-        <h2 class="pb-2 border-bottom" id="features">OpenXPKI Core Features</h2>
+        <h2 class="pb-2 border-bottom" id="features">OpenXPKI at a glance</h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
           <div class="col d-flex align-items-start">
             <div class="bi text-body-secondary flex-shrink-0 me-3">
@@ -400,7 +400,14 @@
             end-entity certificates and may include zero, one, or many Issuing
             CAs for certificate issuance within that namespace. A PKI Realm
             defines profiles, workflows and policies for certificate management,
-            ensuring complete separation from other PKI Realms. </p>
+            ensuring complete separation from other PKI Realms.</p>
+          <p class="lead">The final issuing process can be done directly on the local
+            machine, either using software keys or utilizing an HSM. It is also possible
+            to setup OpenXPKI with RA and CA operating on separate machines or even
+            delegating the issuance process to an external CA. Modules to connect to DigiCert,
+            Sectigo and SwissSign allow you to manage your browser trusted certificates on the same
+            platform as your internal certificates, including all reporting and automation capabilities.
+          </p>
         </div>
 
         <div class="col-md-5 order-md-1">
@@ -667,20 +674,21 @@
         </div>
       </div>
 
+
       <!-- Resources  -->
       <div class="row">
-        <h2 id="resources"></h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-4 py-5">
+        <h2 id="resources" class="pt-5 border-bottom">OpenXPKI Resources</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-2">
           <div class="col d-flex align-items-start">
             <div class="text-dark flex-shrink-0 me-3">
               <i class="bi bi-file-earmark-richtext" style="font-size:1.5em"></i>
             </div>
             <div>
               <h2>Documentation</h2>
-              <p>Documentation is available on the <a href="https://openxpki.readthedocs.io/en/latest/">readthedocs
-                  platform</a>.
-                For first steps see the <a href="https://openxpki.readthedocs.io/en/latest/quickstart.html">quickstart
-                  manual</a>.
+              <p>Documentation is available on the <a href="https://openxpki.readthedocs.io/en/latest/"
+                  rel="noopener noreferrer">readthedocs platform</a>.
+                For first steps see the <a href="https://openxpki.readthedocs.io/en/latest/quickstart.html"
+                  rel="noopener noreferrer">quickstart manual</a>.
                 You should also check the comments in the configuration and the man pages of the application for more
                 details.</p>
             </div>
@@ -692,8 +700,8 @@
             </div>
             <div>
               <h2>Packages</h2>
-              <p>The community edition is available as <a href="https://packages.openxpki.org/v3/bookworm">package
-                  repository for Debian 12 Bookworm</a>.
+              <p>The community edition is available as <a href="https://packages.openxpki.org/v3/bookworm"
+                  rel="noopener noreferrer">package repository for Debian 12 Bookworm</a>.
                 Packages for RHEL/SLES/Ubutu are available via a commercial subscription.</p>
             </div>
           </div>
@@ -704,8 +712,10 @@
             </div>
             <div>
               <h2>Sources</h2>
-              <p>The <a href="https://github.com/openxpki/openxpki">complete source code is hosted on github.com</a>.
-                You will also find a <a href="https://github.com/openxpki/openxpki-config">fully working example
+              <p>The <a href="https://github.com/openxpki/openxpki" rel="noopener noreferrer">complete source code is
+                  hosted on github.com</a>.
+                You will also find a <a href="https://github.com/openxpki/openxpki-config"
+                  rel="noopener noreferrer">fully working example
                   configuration</a> there.
               </p>
             </div>
@@ -718,7 +728,7 @@
             <div>
               <h2>Support</h2>
               <p>For general support questions please use the <a
-                  href="https://lists.sourceforge.net/lists/listinfo/openxpki-users">
+                  href="https://lists.sourceforge.net/lists/listinfo/openxpki-users" rel="noopener noreferrer">
                   OpenXPKI user mailing list</a> hosted by sourceforge.net. Please <b>do not create items</b> on the
                 github issue tracker for support questions.</p>
             </div>
@@ -730,9 +740,11 @@
             </div>
             <div>
               <h2>Testdrive</h2>
-              <p>To get a first impression of OpenXPKI you can visit the <a href="https://demo.openxpki.org">public
+              <p>To get a first impression of OpenXPKI you can visit the <a href="https://demo.openxpki.org"
+                  rel="noopener noreferrer">public
                   demo</a>
-                or run the <a href="https://github.com/openxpki/openxpki-docker">example configuration using docker</a>.
+                or run the <a href="https://github.com/openxpki/openxpki-docker" rel="noopener noreferrer">example
+                  configuration using docker</a>.
             </div>
           </div>
 
@@ -750,12 +762,10 @@
         </div>
       </div>
 
-      <hr class="featurette-divider">
-
-
       <!-- Packages Section -->
       <div class="row">
-        <h2 class="pb-2 border-bottom" id="packages">Support and Service Packages</h2>
+        <h2 class="pb-2 pt-5 border-bottom" id="packages">Support and Service Packages</h2>
+        <div class="row g-2">
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
@@ -781,9 +791,12 @@
               <ul class="list-styled mt-3 mb-4">
                 <li>RHEL/SLES/Ubuntu Packages</li>
                 <li>Custom-Built Configuration</li>
+                <li>Mutli-Tenancy</li>
+                <li>External / Public CA</li>
+                <li>GDPR compliant Data Retention</li>
+                <li>Full ITSM Integration</li>
                 <li>Extensive Handbook</li>
-                <li>Personal Support</li>
-                <li>SLAs available</li>
+                <li>Personal Support / SLAs available</li>
               </ul>
             </div>
           </div>
@@ -795,16 +808,20 @@
             </div>
             <div class="card-body">
               <ul class="list-styled mt-3 mb-4">
-                <li>Full Operations</li>
+                <li>Health Monitoring</li>
+                <li>Logging and Reporting</li>
+                <li>Level-2 Helpdesk</li>
+                <li>Full Operation Support</li>
                 <li>Cloud or OnPremise</li>
                 <li>Flexible Licensing</li>
-                <li>Personal Support</li>
+                <li>HSM Management</li>
                 <li>SLAs available</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
     </div><!-- /.container -->
 
@@ -812,8 +829,8 @@
     <!-- FOOTER -->
     <footer class="container">
       <p class="float-end"><a href="#">Back to top</a></p>
-      <p>&copy; 2023 White Rabbit Security GmbH &middot; <a
-          href="https://www.whiterabbitsecurity.com/impressum/">Contact and Imprint</a></p>
+      <p>&copy; 2023 White Rabbit Security GmbH &middot; <a href="https://www.whiterabbitsecurity.com/impressum/"
+          rel="noopener noreferrer">Contact and Imprint</a></p>
     </footer>
   </main>
 </body>
