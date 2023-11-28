@@ -104,7 +104,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://sourceforge.net/p/openxpki/mailman/openxpki-users/"
-                target="_blank">Mailinglist</a>
+                target="_blank">Mailing List</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://demo.openxpki.org/" target="_blank">Online Demo</a>
@@ -131,7 +131,8 @@
         <div class="col-lg-6">
           <h1 class="display-5 fw-bold lh-1 mb-3">PKI made in Germany</h1>
           <p class="lead">
-            OpenXPKI is an enterprise-grade PKI/Trustcenter software to manage x509v3 certificates via a modern WebUI.
+	  OpenXPKI is an enterprise-grade PKI/Trustcenter software
+	  for managing X.509v3 certificates via a modern web user interface.
           </p>
           <p>Established in 2009, it has grown and improved over the years, with installations serving
             several hundreds of thousend certificates below dozends of issuing CAs on a single installation.</p>
@@ -147,18 +148,18 @@
         <div class="col-lg-4">
           <img class="rounded-circle" width="200" height="160" src="img/my-certificates.png">
           <h2 class="fw-normal">Certificate Lifecycle</h2>
-          <p>Request, renew and revoke certificates using customizable workflows that guide your users easily.</p>
+          <p>Utilize customizable workflows that seamlessly guide your users through the certificate request, renewal, and revocation processes.</p>
         </div>
         <div class="col-lg-4">
           <img class="rounded-circle" width="200" height="160" src="img/bulk.png">
           <h2 class="fw-normal">Automation</h2>
-          <p>Industry standard interfaces and a flexible custom API allow full automation of certificate distribution.
+          <p>Enable full automation of certificate distribution with industry-standard interfaces and a flexible custom API.
           </p>
         </div>
         <div class="col-lg-4">
           <img class="rounded-circle" width="200" height="160" src="img/reports.png">
           <h2 class="fw-normal">Reporting</h2>
-          <p>Know the status of your certificates at all times with our detailed reporting and alerting framework.</p>
+          <p>Stay informed about the status of your certificates at all times through our comprehensive reporting and alerting framework..</p>
         </div>
       </div><!-- /.row -->
 
@@ -206,7 +207,7 @@
             <div>
               <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Flexible Crypto Layer</h3>
               <p>Crypto operations are based on the renowned OpenSSL toolkit and can utilize almost any compatible
-                Hardware Security Modules (HSM).</p>
+                Hardware Security Module (HSM).</p>
             </div>
           </div>
 
@@ -313,23 +314,25 @@
         <div class="col-md-7">
           <h2 class="featurette-heading fw-normal lh-1">OpenXPKI Mission: <span class="text-body-secondary">Empowering
               Continuous PKI Operation.</span></h2>
-          <p class="lead">OpenXPK is an enterprise grade PKI and Trustcenter
+          <p class="lead">OpenXPKI is an enterprise grade PKI and Trustcenter
             software which focuses strongly on Registration Authority (RA)
             functionality and supporting truly continuous PKI operation in
             professional PKI environments of any scale and complexity.
             Maintained by a seasoned team of PKI
             experts, it offers unmatched flexibility and
             configurability. Rooted in a
-            vision outlined in the original architecture whitepaper,
+	  vision outlined in the
+	  <a href="download/OpenXPKI-Architecture-Overview.pdf" target="_blank" rel="noopener noreferrer">original architecture whitepaper</a>,
             the project constantly evolves to meet modern PKI needs. Unique approaches
             tackle common challenges faced in professional environments,
-            emphasizing technical abstraction over local customizations. While <a
-              href="https://github.com/openxpki/openxpki" target="_blank" rel="noopener noreferrer">OpenXPKI Community
-              Edition</a> is true
-            OpenSource, the <a href="https://www.whiterabbitsecurity.com/produkte/openxpki/" target="_blank"
-              rel="noopener noreferrer">Enterprice Edition</a> provides additional features, commercial support
-            and consulting services offered by <a href="https://www.whiterabbitsecurity.com" target="_blank"
-              rel="noopener noreferrer">White Rabbit Security GmbH</a>.</p>
+            emphasizing technical abstraction over local
+	  customizations. While
+	  <a href="https://github.com/openxpki/openxpki" target="_blank" rel="noopener noreferrer">OpenXPKI Community Edition</a> is true
+	  OpenSource, the
+	  <a href="https://www.whiterabbitsecurity.com/produkte/openxpki/" target="_blank" rel="noopener noreferrer">Enterprise Edition</a>
+	  provides additional features, commercial support
+	  and consulting services offered by
+	  <a href="https://www.whiterabbitsecurity.com" target="_blank" rel="noopener noreferrer">White Rabbit Security GmbH</a>.</p>
 
         </div>
         <div class="col-md-5">
@@ -401,12 +404,14 @@
             CAs for certificate issuance within that namespace. A PKI Realm
             defines profiles, workflows and policies for certificate management,
             ensuring complete separation from other PKI Realms.</p>
-          <p class="lead">The final issuing process can be done directly on the local
-            machine, either using software keys or utilizing an HSM. It is also possible
-            to setup OpenXPKI with RA and CA operating on separate machines or even
-            delegating the issuance process to an external CA. Modules to connect to DigiCert,
-            Sectigo and SwissSign allow you to manage your browser trusted certificates on the same
-            platform as your internal certificates, including all reporting and automation capabilities.
+          <p class="lead">The actual certificate issuance can be done directly on the local
+            system, either using software keys or utilizing an HSM. It is also possible
+            to set up OpenXPKI with the RA and CA operating on separate systems or even
+	  delegate the issuance process to an external CA. The OpenXPKI Enterprise Edition
+	  offers extensions that seamlessly integrate with DigiCert, Sectigo, and SwissSign.
+	  This enables you to efficiently manage both your browser-trusted certificates and
+	  internal certificates on a unified platform, complete with comprehensive reporting
+	  and automation capabilities.
           </p>
         </div>
 
@@ -531,11 +536,11 @@
         <div class="col-md-7 order-md-2">
           <h2 class="featurette-heading fw-normal lh-1">Flexible Configuration: <span class="text-body-secondary">Manage
               System State Auditably and Verifiably.</span></h2>
-          <h3 class="featurette-heading-sub">Strictly file-based Configuration</h3>
-          <p class="lead">OpenXPKI's entire system is configured through a hierarchy of YAML-format configuration files.
-            The use of a revision control system like Git facilitates easy management, enabling an auditable and
-            verifiable representation of the system state. This approach ensures transparency and flexibility in
-            configuring the OpenXPKI system.</p>
+	  <p class="lead">OpenXPKI's is configured through a hierarchy of YAML-format configuration files.
+	  As the entire configuration is strictly file-based, the use of a revision control system like Git for a
+	  PKI instance configuration facilitates easy management, enabling an auditable and verifiable representation
+	  of the complete system state. This approach allows test and development systems to share exactly the same configuration as the
+	  production system, with any necessary differences isolated in a single local overlay file.</p>
         </div>
         <div class="col-md-5 order-md-1">
           <img src="img/wfcondition1.png"
@@ -656,7 +661,8 @@
             Operating: <span class="text-body-secondary">Auditable, Reproducible
               Runtime Administration.</span></h2>
           <p class="lead">OpenXPKI's operational tasks are executed via the
-            command line using a set of provided command line tools. Administrators can perform tasks in a textual form,
+	  command line using a set of provided command line tools. Administrators can perform PKI tasks
+	  in a textual form,
             enabling the exact description of administrative actions in change task descriptions or scripts.</p>
           <p class="lead">For instance, the import of a new Issuing CA
             certificate can be seamlessly conducted online without interrupting
@@ -685,12 +691,14 @@
             </div>
             <div>
               <h2>Documentation</h2>
-              <p>Documentation is available on the <a href="https://openxpki.readthedocs.io/en/latest/"
-                  rel="noopener noreferrer">readthedocs platform</a>.
+              <p>Documentation for OpenXPKI Community Edition is <a href="https://openxpki.readthedocs.io/en/latest/"
+                  rel="noopener noreferrer">available online via Read the Docs</a>.
                 For first steps see the <a href="https://openxpki.readthedocs.io/en/latest/quickstart.html"
                   rel="noopener noreferrer">quickstart manual</a>.
                 You should also check the comments in the configuration and the man pages of the application for more
-                details.</p>
+	      details.</p>
+	      <p>OpenXPKI Enterprise Edition comes with extensive documentation in PDF format, covering all aspects of the
+	      software in detail.</p>
             </div>
           </div>
 
@@ -700,9 +708,11 @@
             </div>
             <div>
               <h2>Packages</h2>
-              <p>The community edition is available as <a href="https://packages.openxpki.org/v3/bookworm"
-                  rel="noopener noreferrer">package repository for Debian 12 Bookworm</a>.
-                Packages for RHEL/SLES/Ubutu are available via a commercial subscription.</p>
+	      <p>Debian packages for the Community Edition are available from our
+	      <a href="https://packages.openxpki.org/v3/bookworm" rel="noopener noreferrer">Debian 12 "Bookworm" package repository</a>.
+	      A <a href="https://www.freshports.org/security/p5-openxpki/" rel="noopener noreferrer">FreeBSD Port of OpenXPKI</a> exists which
+	      is not maintained by the OpenXPKI core development team, but by an independent maintainer.</p>
+	      <p>OpenXPKI Enterprise Edition is available packaged for RedHat Enterprise Linux (RHEL), SuSE Linux Enterprise Server (RHEL) and Ubuntu Server LTS.</p>
             </div>
           </div>
 
@@ -712,10 +722,13 @@
             </div>
             <div>
               <h2>Sources</h2>
-              <p>The <a href="https://github.com/openxpki/openxpki" rel="noopener noreferrer">complete source code is
-                  hosted on github.com</a>.
-                You will also find a <a href="https://github.com/openxpki/openxpki-config"
-                  rel="noopener noreferrer">fully working example
+              <p>The <a href="https://github.com/openxpki/openxpki" rel="noopener noreferrer">complete source code</a> is
+	      hosted on Github.
+	      <a href="https://github.com/openxpki/openxpki/issues" rel="noopener noreferrer">Github Issues</a> may be used to notify us of bugs.
+	      <b>Please do not use Github Issues for support queries</b>, use the
+	      <a href="https://lists.sourceforge.net/lists/listinfo/openxpki-users" rel="noopener noreferrer">OpenXPKI Users Mailing List</a> instead.
+	      We accept useful pull requests via Github.</p>
+	      <p>You can also find a <a href="https://github.com/openxpki/openxpki-config" rel="noopener noreferrer">fully working example
                   configuration</a> there.
               </p>
             </div>
@@ -726,11 +739,14 @@
               <i class="bi bi-person-raised-hand" style="font-size:1.5em"></i>
             </div>
             <div>
-              <h2>Support</h2>
-              <p>For general support questions please use the <a
-                  href="https://lists.sourceforge.net/lists/listinfo/openxpki-users" rel="noopener noreferrer">
-                  OpenXPKI user mailing list</a> hosted by sourceforge.net. Please <b>do not create items</b> on the
-                github issue tracker for support questions.</p>
+	      <h2>Support</h2>
+	      <p>Sharing problems and solutions with OpenXPKI Community Edition fosters the OpenSource idea,
+	      and the OpenXPKI core team is committed to assist users with problems or questions that
+	      may arise with OpenXPKI Community Edition.</p>
+	      <p>For general support questions please use the
+	      <a href="https://lists.sourceforge.net/lists/listinfo/openxpki-users" rel="noopener noreferrer">
+                  OpenXPKI Users Mailing List</a> hosted by sourceforge.net. <b>Please do not create issues on the
+	      Github Issue Tracker for support questions.</b></p>
             </div>
           </div>
 
@@ -739,8 +755,8 @@
               <i class="bi bi-eyeglasses" style="font-size:1.5em"></i>
             </div>
             <div>
-              <h2>Testdrive</h2>
-              <p>To get a first impression of OpenXPKI you can visit the <a href="https://demo.openxpki.org"
+              <h2>Test Drive</h2>
+              <p>To get a hands-on impression of how OpenXPKI works, visit the <a href="https://demo.openxpki.org"
                   rel="noopener noreferrer">public
                   demo</a>
                 or run the <a href="https://github.com/openxpki/openxpki-docker" rel="noopener noreferrer">example
@@ -754,9 +770,11 @@
             </div>
             <div>
               <h2>Professional Services</h2>
-              <p>Reach out to the core developers at <a href="mailto:openxpki@whiterabbitsecurity.com"
-                  style="color:#464646">White Rabbit Security GmbH</a>
-                for trainings, consultancy and any other commercial support options.</p>
+	      <p>The OpenXPKI team consists of cryptographic key management experts with vast experience designing and 
+	      implementing numerous different PKIs of all scale.</p>
+              <p>Feel free to <a href="mailto:openxpki@whiterabbitsecurity.com" style="color:#464646">reach out to the core developers</a>
+                  at <a href="https://www.whiterabbitsecurity.com" rel="noopener noreferrer">White Rabbit Security</a>
+	      for more information on OpenXPKI Enterprise Edition, professional services, and our various commercial support options.</p>
             </div>
           </div>
         </div>
@@ -764,19 +782,20 @@
 
       <!-- Packages Section -->
       <div class="row">
-        <h2 class="pb-2 pt-5 border-bottom" id="packages">Support and Service Packages</h2>
+        <h2 class="pb-2 pt-5 border-bottom" id="packages">OpenXPKI Editions, Support and Service Options Overview</h2>
         <div class="row g-2">
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
-              <h4 class="my-0 fw-normal">Community</h4>
+              <h4 class="my-0 fw-normal">OpenXPKI Community Edition</h4>
             </div>
             <div class="card-body">
               <ul class="list-styled mt-3 mb-4">
+                <li>Comprehensive, fully functional code base</li>
                 <li>Debian Packages</li>
                 <li>Example Configuration</li>
                 <li>Online Documentation</li>
-                <li>Support via Mailinglist</li>
+                <li>Support via Mailing List</li>
                 <li>100% Free</li>
               </ul>
             </div>
@@ -785,18 +804,16 @@
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm">
             <div class="card-header py-3">
-              <h4 class="my-0 fw-normal">Enterprise</h4>
+              <h4 class="my-0 fw-normal">OpenXPKI Enterprise Edition</h4>
             </div>
             <div class="card-body">
               <ul class="list-styled mt-3 mb-4">
                 <li>RHEL/SLES/Ubuntu Packages</li>
                 <li>Custom-Built Configuration</li>
-                <li>Mutli-Tenancy</li>
-                <li>External / Public CA</li>
-                <li>GDPR compliant Data Retention</li>
+                <li>Powerful Extension Modules available (e. g. Multi-Tenancy, adapters to external/public CAs, GDPR compliant Data Retention)</li>
                 <li>Full ITSM Integration</li>
-                <li>Extensive Handbook</li>
-                <li>Personal Support / SLAs available</li>
+		<li>Extensive product documentation in PDF format</li>
+                <li>Individual Support with SLAs</li>
               </ul>
             </div>
           </div>
